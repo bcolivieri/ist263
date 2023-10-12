@@ -4,7 +4,7 @@ h1 {color: #ff0000;
     body {background-color: #ff0000;}
     p {
         background-color: #efefef;
-        padding: 20px; /* space inside the box */
+        padding: 10px; /* space inside the box */
         border: 2px solid #333333;
         margin: 30px;
     }

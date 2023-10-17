@@ -11,13 +11,16 @@
            .row1, .row2 {display: flex;} /* auto puts columns next to each other */
            .row1 div, .row2 div {
                 flex: 1;  
+                padding: 10px;
            } /* selects divs inside element with row1 class */
        footer {
         background-color: #000e54;
         color: #c9c9c9;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    .seal {text-align: center;}
+    .seal {text-align: center;
+        flex: 2;
+    }
        </style>
     </head>
     <body>
@@ -29,6 +32,7 @@
 
         <div class="row1">  <!-- container tag for the row -->
             <div class="seal"></div>
+            
                 <img src="https://www.syracuse.edu/assets-static/carbon_v1/img/syracuse-university-seal-white.svg">
 
                 <p>
@@ -40,7 +44,7 @@
                     Phone: +1.315.443.1870
                 </p>
             </div> <!-- the following are containers for the column -->
-            <div>
+            <div class="quick">
                 <p>
                 <strong>Popular</strong><br>
                 Academic Calendar<br>
@@ -51,7 +55,7 @@
                 Visits and Tours
                 </p>
         </div>
-            <div>
+            <div class="quick">
                 <p>
                 <strong> A-Z</strong><br>
                 Find People <br>
@@ -61,7 +65,7 @@
                 Search
                 </p>
             </div>
-            <div>
+            <div class="quick">
                 <p>
                 <strong>Contact</strong><br>
                 Admissions<br>
@@ -72,7 +76,7 @@
                 Make a Gift
                 </p>
             </div>
-            <div> 
+            <div class="quick"> 
                 <p>
                 <strong>Login</strong><br>
                 MySlice<br>

@@ -1,13 +1,55 @@
-h1 {color: #ff0000; 
-    background-color: #ffffff;} /* use hex colors from now on */
-    a:hover {color: #00ff00;} /* psuedo selector - selects a state of an element  */
-    body {background-color: #ff0000;}
-    p {
-        background-color: #efefef;
-        padding: 10px; /* space inside the box */
-        border: 2px solid #333333;
-        margin: 30px;
-    }
-    nav {background-color: #80B3FF;}
-    nav a {color: #00ff00;}
-    nav a:hover {background-color: #ff0000;}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+.profile-image {
+    border: 2px solid #333; 
+    border-radius: 10px; 
+}
+main {
+    border: 5px solid #4CAF50; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+footer {
+    border: 2px solid blue; 
+    padding: 10px; 
+}

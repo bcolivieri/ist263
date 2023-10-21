@@ -1,0 +1,13 @@
+h1 {color: #ff0000; 
+    background-color: #ffffff;} /* use hex colors from now on */
+    a:hover {color: #00ff00;} /* psuedo selector - selects a state of an element  */
+    body {background-color: #ff0000;}
+    p {
+        background-color: #efefef;
+        padding: 10px; /* space inside the box */
+        border: 2px solid #333333;
+        margin: 30px;
+    }
+    nav {background-color: #80B3FF;}
+    nav a {color: #00ff00;}
+    nav a:hover {background-color: #ff0000;}

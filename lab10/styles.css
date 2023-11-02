@@ -241,3 +241,12 @@ nav span {
     display: none;
 }
 }
+.profile-image {
+    max-width: 100%; 
+    height: auto; 
+    border: 2px solid #333; 
+    border-radius: 10px;
+}
+
+
+

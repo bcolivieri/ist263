@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Contact</h1>
+
+        <section class="form-map-section">
+            <div class="contact-info">
+                <div class="flex-item">
+                    <h2>Ben Olivieri</h2>
+                    <p>54 Packard Avenue</p>
+                </div>
+                <div class="flex-item">
+                    <p><a href="mailto:bennolivieri123@gmail.com">My Personal Email</a></p>
+                    <p><a href="http://www.linkedin.com/in/benjamin-olivieri">My LinkedIn Profile</a> <img src="../Images/logo.sized.png" alt="LinkedIn Logo"></p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xdorpbgk" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="contactMethod">Preferred Contact Method:</label>
+                    <select id="contactMethod" name="contactMethod" required>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7916.708853887653!2d-70.8872601346891!3d42.28399194782213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3665f68446b15%3A0x7ca76f682cb52ced!2s54%20Packard%20Ave%2C%20Hull%2C%20MA%2002045!5e0!3m2!1sen!2sus!4v1696546367038!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Ben Olivieri</p>
+    </footer>
+</body>
+
+</html>
+
+

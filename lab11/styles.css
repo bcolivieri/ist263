@@ -259,5 +259,10 @@ header img {
     margin-right: 20px; 
 }
 
-
+header {
+    background-color: #d3d3d3; /* Light gray color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
 

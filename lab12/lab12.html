@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12</title>
+</head>
+<script>
+    function winnerMessage() {
+        alert("You Won!");
+    }
+
+    function tryAgain() {
+        alert("Wrong Shell - Try Again");
+    }
+
+    function shuffleShells() {
+        var order = Math.floor((Math.random() * 3) + 2);
+        document.getElementById("first").style.order = order;
+    }
+
+    window.onload = shuffleShells;
+</script>
+<body>
+    <h1>Welcome to the Shell Game!</h1>
+    <div class="container">
+        <img src="shell1.jpg" onclick="winnerMessage();" id="first">
+        <img src="shell2.jpg" onclick="tryAgain();" id="second">
+        <img src="shell3.jpg" onclick="tryAgain();" id="third">
+    </div>
+</body>
+</html>
+    
+    

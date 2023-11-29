@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Syracuse University Page</title>
+    <style>
+        #universityText {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function changeTextAndColor() {
+            var textElement = document.getElementById('universityText');
+            if (textElement.innerHTML === 'Syracuse University') {
+                textElement.innerHTML = 'Orange Nation';
+                textElement.style.color = 'orange';
+            } else {
+                textElement.innerHTML = 'Syracuse University';
+                textElement.style.color = 'black';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="universityText" onclick="changeTextAndColor()">Syracuse University</div>
+</body>
+</html>

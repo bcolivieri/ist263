@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planet Slideshow</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  #mainImage {
+    width: 60%;
+    float: left;
+  }
+  #planetDetails {
+    width: 40%;
+    float: right;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 400px; /* Adjust as needed */
+  }
+  #thumbnails {
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #thumbnails img {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div id="mainImage">
+  <img id="largeImage" src="http://bcolivieri.github.io/ist263/images/mercury.jpg" alt="Mercury" width="100%">
+</div>
+<div id="planetDetails">
+  <h2 id="planetName">Mercury</h2>
+  <p id="planetInfo">Mercury is the smallest and innermost planet in the Solar System...</p>
+</div>
+
+<div id="thumbnails">
+  <img src="ist263/images/mercury.jpg" alt="Mercury" onclick="changePlanet('Mercury', 'path_to_mercury_image.jpg', 'Mercury is...')">
+  <!-- Repeat for other planets -->
+</div>
+
+<script>
+  function changePlanet(name, imagePath, info) {
+    document.getElementById('largeImage').src = imagePath;
+    document.getElementById('largeImage').alt = name;
+    document.getElementById('planetName').innerText = name;
+    document.getElementById('planetInfo').innerText = info;
+  }
+</script>
+
+</body>
+</html>
+

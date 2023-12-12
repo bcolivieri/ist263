@@ -39,21 +39,21 @@ main {
     padding: 20px;
 }
 .food-image, .review-image {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 .food-image img, .review-image img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
 }
 .food-description, .review-image {
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
     border: 2px solid #000000; 
     padding: 20px;

@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black; 
+    font-weight: 700; 
+}
+
+header {
+    background: #ff0000;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.featured-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.featured-recipes article {
+    margin: 10px;
+    text-align: center;
+}
+
+.featured-recipes img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #008000;
+}

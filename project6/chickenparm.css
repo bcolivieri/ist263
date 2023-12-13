@@ -84,6 +84,12 @@ p {
     color: #666;
     margin: 10px 0;
 }
+header {
+    display: flex;       
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
 footer {
     text-align: center; 
     padding: 10px 0; 

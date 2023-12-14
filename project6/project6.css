@@ -8,87 +8,83 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
+
 header {
-    background-color: #FF0000;
-    color: white;
-    padding: 1em 0;
+    background: #ff0000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 10px;
 }
 
-nav a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
+
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
 }
-.food-image, .review-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.food-image img, .review-image img {
-    max-width: 50%;
+
+.food-image img {
+    width: 50px; 
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+    display: block;
+    margin: 10px auto;
 }
-.food-description, .review-image {
-    text-align: left;
-    margin: 20px 0;
-    border: 2px solid #000000; 
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f9f9f9; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #008000;
+    color: #fff;
 }
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+
+@media screen and (max-width: 600px) {
+    .food-image img {
+        width: 30px; 
     }
 
     nav ul li {
-        margin: 5px 0;
+        display: block;
+        margin: 10px 0;
     }
 }
-a:focus, a:hover {
-    outline: 2px solid #fff;
-    outline-offset: 2px;
+main {
+    display: flex;
+    justify-content: space-between;
 }
 
-h2 {
-    color: #333;
-    margin: 10px 0;
+.food-image, .additional-images {
+    flex: 1;
 }
 
-p {
-    color: #666;
-    margin: 10px 0;
+.right-side-image {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
 }
-footer {
-    text-align: center; 
-    padding: 10px 0; 
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .right-side-image {
+        max-width: 50px; 
+    }
 }
 
-.footer-text {
-    margin: 0; 
-}

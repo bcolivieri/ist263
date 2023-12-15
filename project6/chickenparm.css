@@ -1,331 +1,120 @@
+/* Global Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 700;
+    background: #f8f8f8;
 }
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
 header {
     background-color: #FF0000;
     color: white;
+    text-align: center;
     padding: 1em 0;
+    position: relative; /* For absolute positioning of child elements */
 }
 
+#italian-flag {
+    position: absolute; /* Absolutely position flag within header */
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%); /* Center vertically */
+    width: 50px; /* Adjust width as needed */
+}
+
+header h1 {
+    color: black;
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Navigation Styles */
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     padding: 10px;
-    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 10px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
 }
+
+nav a:hover {
+    background-color: white;
+    color: #ff0000;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Footer Styles */
+footer {
+    background-color: #008000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Image Row Styles */
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+}
+
+.image-row img {
+    width: calc(33.333% - 10px); /* Three images per row with 10px subtracted for margin */
+    margin: 5px;
+    border: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    nav ul {
+    header, nav ul, .image-row {
         flex-direction: column;
     }
 
-    nav ul li {
-        margin: 5px 0;
+    nav ul li, .image-row img {
+        margin: 5px 0; /* Adjust margin for stacked items on smaller screens */
     }
 }
-a:focus, a:hover {
-    outline: 2px solid #fff;
-    outline-offset: 2px;
-}
 
-h2 {
-    color: #333;
-    margin: 10px 0;
-}
+/* Other Styles */
+/* Add any additional styles that are missing from above */
 
-p {
-    color: #666;
-    margin: 10px 0;
-}
-header {
-    display: flex;       
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-}
-.bottom-box {
-    background-color: #008000; 
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #008000;
-    color: white;
-    margin-top: 30px; /* Space above the footer */
-}
-.footer-text {
-    margin: 0; 
-}
-#italian-flag {
-    width: 50px; /* Adjust the width as desired */
-    height: auto; /* This will maintain the aspect ratio of the image */
-}
-footer p {
-    color: #FFFFFF; /* This sets the text color to white */
-}
-header h1 {
-    background-color: white; /* Sets the background of the box to white */
-    display: inline-block; /* Changes the display to allow for padding and margin */
-    padding: 10px 20px; /* Adds space inside the box around the text */
-    margin: 10px 0; /* Adds space outside the box */
-    border-radius: 10px; /* Optional: Rounds the corners of the box */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-    color: #000000; /* Sets the text color to black */
-    }
-    /* General body styling */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    background: #f8f8f8; /* Light background for the entire page */
-}
-
-/* Header styling */
-header {
-    background: #ff0000;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Navigation styling */
-header nav ul {
-    padding: 0;
-    list-style-type: none;
-    margin: 0; /* Removes default margin */
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px; /* Adjusts space between nav items */
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white; /* Makes text color white for better contrast */
-    font-weight: bold;
-}
-
-/* Featured dishes section styling */
-.featured-dishes {
-    max-width: 1200px; /* Maximum width of the content */
-    margin: 0 auto; /* Centers the section in the page */
-    padding: 20px;
-}
-
-/* Individual dish article styling */
-.featured-dishes article {
-    margin-bottom: 30px; /* Space between articles */
-}
-
-/* Image styling to make them smaller and organized */
-.featured-dishes img {
-    width: 200px; /* Smaller width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for aesthetics */
-    margin: 10px; /* Space around images */
-    height: auto; /* Maintains aspect ratio */
-    border: 2px solid red; /* Adds a red border */
-    padding: 5px; /* Space between the image and the border */
-    margin: 10px; /* Space around images */
-    border-radius: 5px; /* Optional: Rounds the corners of the border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-    display: inline-block; /
-}
-
-/* Figcaption styling for image descriptions */
-figcaption {
-    color: #555;
-    font-size: 0.9rem; /* Smaller font size for captions */
-    margin-top: 5px; /* Space between image and caption */
-}
-
-/* Food description paragraph styling */
-.food-description {
-    font-size: 1rem; /* Adjust the font size as needed */
-    color: #333;
-    line-height: 1.6; /* This will make the text more readable */
-    border: 2px solid red; /* Adds a red border around the paragraph */
-    padding: 20px; /* Adds some space between the text and the border */
-    margin: 20px auto; /* Centers the paragraph block and adds vertical space */
-    max-width: 80%; /* Optional: Prevents the paragraph from getting too wide */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-    border-radius: 5px; /* Optional: Rounds the corners of the border */
-    background-color: #fff;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #008000;
-    color: white;
-    margin-top: 30px; /* Space above the footer */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    header nav ul li {
-        display: block; /* Stack the navigation items on smaller screens */
-        margin: 10px 0; /* Space between stacked items */
-    }
-
-    .featured-dishes img {
-        width: 100%; /* Full width images on smaller screens */
-        max-width: 300px; /* Maximum size to not be too large */
-        height: auto;
-        margin: 10px auto; /* Center images */
-    }
-
-    .featured-dishes {
-        padding: 10px; /* Less padding on smaller screens */
-    }
-}
-nav ul li a {
-    text-decoration: none;
-    color: #333; /* Normal state color */
-    padding: 5px 10px; /* Padding for better target area */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-}
-
-/* Hover state style */
-nav ul li a:hover {
-    background-color: #ffffff; /* Background color when hovered */
-    color: #ff0000; /* Text color when hovered */
-    border-radius: 5px; /* Optional: rounded corners for the highlight */
-}
-/* Style for figcaption elements within featured-dishes section */
-/* Style for figcaption elements within featured-dishes section */
-.featured-dishes figcaption {
-    border: 2px solid black; /* Black border */
-    padding: 5px; /* Reduced padding */
-    margin-top: -5px; /* Adjusts space between the image and caption */
-    font-weight: bold; /* Bold font */
-    font-size: 0.9rem; /* Smaller font size */
-    text-align: center; /* Centered text */
-    background-color: #fff; /* White background */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-/* General header styles */
-#italian-flag {
-    height: auto; /* Maintain the aspect ratio */
-    width: 50px; /* Example width, adjust as needed */
-    vertical-align: left; /* Align with the text if necessary */
-}
-header h1 {
-    background-color: white; /* Sets the background of the box to white */
-    display: inline-block; /* Changes the display to allow for padding and margin */
-    padding: 10px 20px; /* Adds space inside the box around the text */
-    margin: 10px 0; /* Adds space outside the box */
-    border-radius: 10px; /* Optional: Rounds the corners of the box */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-    /* Other styles you may want to keep */
-}
-.featured-dishes .dish-image {
-    flex: 1; /* Takes up a portion of the flex container */
-    margin-right: 20px; /* Adds space between the image and the text */
-}
-
-/* Styles for the content container next to the image */
-.featured-dishes .dish-content {
-    flex: 2; /* Takes up twice as much space as the image */
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-}
-
-/* Styles for the text description */
-.featured-dishes .dish-text {
-    margin-bottom: 10px; /* Adds space between the text and the caption */
-    /* Apply any other text styles such as font-size, color, etc. */
-}
-
-
-
-/* Style for the image to not exceed its natural size */
-.top-dish img {
-    max-width: 100%; /* Limit the image to the size of the figure */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid red; /* Your existing border styles */
-    border-radius: 5px; /* Your existing border-radius */
-}
-
-/* Style for the figcaption element */
-.top-dish figcaption {
-    text-align: center; /* Center the caption text */
-    /* Your existing figcaption styles */
-}
-
-/* Style for the text content */
-.text-content {
-    padding: 10px; /* Add some padding around the text */
-    margin-left: 20px; /* Add some left margin to separate text from image */
-    flex-grow: 1; /* Allow the text content to take up the remaining space */
-    /* Add any additional styles you want for the text content */
-}
-.dish-figure img {
-    width: 200px; /* Set a specific width */
-    height: 150px; /* Set a specific height */
-    object-fit: cover; /* Crop the image to fill the box */
-    border: 2px solid red; /* Existing border styles */
-    border-radius: 5px; /* Existing border-radius styles */
-}
-.description-box {
-    border: 1px solid #000; /* Example black border, adjust as needed */
-    padding: 10px; /* Add some space inside the box */
-    margin: 10px 0; /* Add some space outside the box, above and below */
-    background-color: #fff; /* Set the background color to white */
-    text-align: center;
-}
-.content-container {
-    display: flex;
-    justify-content: space-around; /* Adjusts spacing between items */
-    align-items: center; /* Aligns items vertically */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  }
   
-  .item {
-    display: flex;
-    flex-direction: column; /* Stacks image and text vertically */
-    align-items: center; /* Centers them horizontally within the item */
-    width: 200px; /* Example fixed width, adjust as needed */
-  }
-  
-  .item img {
-    width: 100%; /* Makes the image fill the container */
-    height: auto; /* Maintains aspect ratio */
-    margin-bottom: 10px; /* Space between image and text */
-  }
-  
-  .item p {
-    text-align: center; /* Centers the text */
-  }

@@ -204,11 +204,28 @@ header h1 {
     background-color: #fff; /* Set the background color to white */
     text-align: center;
 }
-.image-container {
+.content-container {
     display: flex;
-    justify-content: center; /* This will center the flex items (images) horizontally */
-    align-items: center; /* This will center the flex items (images) vertically, if they have different heights */
-    flex-wrap: wrap; /* This will allow the items to wrap to the next line on smaller screens */
-    gap: 10px; /* This adds space between the images */
+    justify-content: space-around; /* Adjusts spacing between items */
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
   }
+  
+  .item {
+    display: flex;
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center; /* Centers them horizontally within the item */
+    width: 200px; /* Example fixed width, adjust as needed */
+  }
+  
+  .item img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .item p {
+    text-align: center; /* Centers the text */
+  }
+  
   

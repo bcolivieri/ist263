@@ -37,6 +37,8 @@ header {
     left: 50px;
     transform: translateY(-50%); /* Center vertically */
     width: 50px; /* Adjust width as needed */
+    display: block; /* Ensures the image is a block-level element */
+    margin: 0 auto;
 }
 
 header h1 {
@@ -116,5 +118,26 @@ footer {
 
 /* Other Styles */
 /* Add any additional styles that are missing from above */
+.Review-Paragraph {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 2px solid red; /* Adjust the thickness and color as needed */
+    padding: 10px; /* Adds space below each paragraph */
+}
+.flag-row {
+    background-image: url('https://bcolivieri.github.io/ist263/Images/Italy.jpg'); /* Replace with the path to your flag image */
+    background-repeat: repeat-x; /* This will repeat the flag image horizontally */
+    background-size: contain; /* This ensures the image is scaled to fit the height of the container */
+    height: 50px; /* Set the height to control the size of the flags display area */
+    width: 100%; /* Make the div span the full width of its container */
+}
+.header-image {
+    position: absolute; /* Positions the images absolutely within the header */
+    top: 50%; /* Aligns the top edge of the image to the middle of the header */
+    transform: translateY(-50%); /* Centers the image vertically */
+}
 
-  
+.header-image.left {
+    left: 0; /* Aligns the left image to the left edge of the header */
+}
+

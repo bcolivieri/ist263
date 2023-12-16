@@ -1,0 +1,155 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8; /* Light background for the entire page */
+}
+
+/* Header styling */
+header {
+    background: #ff0000;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Allows absolute positioning relative to the header */
+}
+
+header img#italian-flag, header .header-hearts {
+    height: auto;
+    width: 50px; /* Adjust width as necessary */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header img#italian-flag {
+    left: 20px;
+}
+
+header .header-hearts {
+    right: 20px;
+}
+
+header h1 {
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styling */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    border-radius: 5px;
+}
+
+/* Featured dish/recipes section */
+.featured-dish1, .featured-recipes {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-dish1 .image-row, .featured-recipes .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjusts spacing between images */
+}
+
+.featured-dish1 .image-row img, .featured-recipes img {
+    width: auto; /* Adjust width as necessary, auto for content-based width */
+    max-width: 300px; /* Limits the maximum size of images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add space around images */
+    border: 3px solid red; /* Red border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+}
+
+/* Review paragraphs styling */
+.Review-Paragraph {
+    text-align: justify;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid red; /* Red border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+    background-color: #fff;
+    box-sizing: border-box; /* Ensures that padding and border are included in the width and height */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #008000;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header img#italian-flag, header .header-hearts {
+        width: 50px; /* Adjust width as necessary */
+        position: static;
+        transform: none;
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    header h1 {
+        padding: 5px 10px;
+    }
+
+    .featured-dish1 .image-row img, .featured-recipes img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.flag-row {
+    display: flex;
+    justify-content: center; /* This will space out the flags evenly */
+    align-items: center;
+}
+
+.flag-row img {
+    height: auto;
+    width: auto; /* Adjust the size of the flags as needed */
+    margin: 0 10px; /* Adjust the space between the flags as needed */
+}
+/* Style for the title */
+.title-box {
+    border: 2px solid red; /* Red border around the title */
+    padding: 10px; /* Space between the text and the border */
+    margin-bottom: 20px; /* Space between the title and the content below */
+    display: inline-block; /* Makes the border wrap around the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+
+

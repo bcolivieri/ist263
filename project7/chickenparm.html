@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="chickenparm.css">
     <link rel="icon" type="image/png" href="https://bcolivieri.github.io/ist263/Images/heartfavicon.png">
 </head>
+<script>
+    window.onload = function() {
+        var flagRow = document.querySelector('.flag-row');
+        var flagWidth = 50; // Width of the flag image
+        var screenWidth = window.innerWidth; // Width of the screen or container
+        var numberOfFlags = Math.floor(screenWidth / flagWidth); // Number of flags that can fit in the row
+
+        for (var i = 0; i < numberOfFlags; i++) {
+            var img = document.createElement('img');
+            img.src = 'https://bcolivieri.github.io/ist263/Images/Italy.jpg';
+            img.alt = 'Italian Flag';
+            img.style.width = '50px'; // Match this to the flagWidth variable
+            img.style.height = 'auto';
+            flagRow.appendChild(img);
+        }
+    };
+</script>
 <body>
     <header>
-        <div class="header-image left">
-            <img src="path-to-your-left-image.jpg" alt="Left Image Description">
-        </div>
-        <div class="header-image right">
-            <img src="path-to-your-right-image.jpg" alt="Right Image Description">
-        </div>
         <img src="https://bcolivieri.github.io/ist263/Images/Italy.jpg" alt="Italian Flag" id="italian-flag" width="50">
         <div class="header-hearts left-hearts">
             <span>&hearts;</span> <span>&hearts;</span> <span>&hearts;</span> <span>&hearts;</span> <span>&hearts;</span> 
@@ -34,7 +45,7 @@
     <main>
         <section class="featured-dish1">
             <article>
-                <h2>Chicken Parmesean - Mezzo Mare - Hull, Ma</h2>
+                <h2 class="title-box">Chicken Parmesean - Mezzo Mare - Hull, Ma</h2>
                 <div class="image-row">
                 <img src="https://bcolivieri.github.io/ist263/Images/Hull.jpg" alt="Hull"> <img src="https://bcolivieri.github.io/ist263/Images/MMM.jpg" alt="Mezzo Mare"> <img src="https://bcolivieri.github.io/ist263/Images/MM1.jpg" alt="Mezzo Mare">
                 </div>

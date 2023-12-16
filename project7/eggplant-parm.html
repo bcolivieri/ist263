@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggplant Parmesean</title>
+    <link rel="stylesheet" href="eggplant-parm.css">
+    <link rel="icon" type="image/png" href="https://bcolivieri.github.io/ist263/Images/heartfavicon.png">
+</head>
+<script>
+    window.onload = function() {
+        var flagRow = document.querySelector('.flag-row');
+        var flagWidth = 50; // Width of the flag image
+        var screenWidth = window.innerWidth; // Width of the screen or container
+        var numberOfFlags = Math.floor(screenWidth / flagWidth); // Number of flags that can fit in the row
+
+        for (var i = 0; i < numberOfFlags; i++) {
+            var img = document.createElement('img');
+            img.src = 'https://bcolivieri.github.io/ist263/Images/Italy.jpg';
+            img.alt = 'Italian Flag';
+            img.style.width = '50px'; // Match this to the flagWidth variable
+            img.style.height = 'auto';
+            flagRow.appendChild(img);
+        }
+    };
+</script>
+<body>
+    <header>
+        <img src="https://bcolivieri.github.io/ist263/Images/Italy.jpg" alt="Italian Flag" id="italian-flag" width="50">
+        <div class="header-hearts left-hearts">
+            <span>&hearts;</span> <span>&hearts;</span> <span>&hearts;</span> <span>&hearts;</span> <span>&hearts;</span> 
+            </div>
+            </div>
+        </div>
+        <h1><span class="heart">&hearts;</span>Ben's Exquisite Italian Cuisine Reviews<span class="heart">&hearts;</span></h1>
+        <nav>
+        <nav>
+            <ul>
+                <li><a href="project6.html">Home</a></li>
+                <li><a href="chickenparm.html">Chicken Parm</a></li>
+                <li><a href="eggplant-parm.html">Eggplant Parm</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="featured-recipes">
+            <article>
+                </div>
+                <h2 class="title-box">Eggplant Parmesan - Angotti's Family Restaurant</h2>
+                <div class="image-row"></div>
+                <img src="https://bcolivieri.github.io/ist263/Images/EP1.jpg" alt="Eggplant Parm"> <img src="https://bcolivieri.github.io/ist263/Images/EP2.jpg" alt="Eggplant Parm"> <img src="https://bcolivieri.github.io/ist263/Images/EP3.jpg" alt="Eggplant Parm">
+                <p class="Review-Paragraph">In Syracuse, New York, Agnotti's Chicken Parmesan offers a traditional meal with the cozy warmth of homemade Italian food. When the platter is delivered, it has all of the classic ingredients on it: a breaded chicken cutlet, marinara sauce, and lots of melted mozzarella cheese.</p>
+                
+                <p class="Review-Paragraph">After tasting, it's evident that the meal aims for the delight that one would anticipate from such a mainstay. The breading on the chicken is just right, as it just it crumples enough to expose the soft meat underneath. Although the marinara sauce is thick, it doesn't have the  taste that takes a basic dish and makes it remarkable.</p>
+                
+                <p class="Review-Paragraph">Even though the melted cheese looks good, it doesn't really add much to the overall richness of the dish. Based solely on the plate's merits, it earns a modest rating of 6.8, respectable but very average, leaving room for refinement and a more distinctive touch.</p>
+        </section>
+        <div class="flag-row"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Site's Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
